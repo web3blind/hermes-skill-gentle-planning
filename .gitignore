@@ -1,0 +1,28 @@
+# Local planning artifacts
+plan.md
+public-export-plan.md
+*-plan.md
+_plans/
+
+# Runtime state / generated output
+state/
+runs/
+output/
+debug/
+*.log
+*.tmp
+*.state.json
+*.local.json
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+config.local.json
+
+# Python / Node caches
+__pycache__/
+*.pyc
+node_modules/
+.venv/
+venv/
