@@ -72,6 +72,12 @@ The skill avoids:
 - turning rest into a reward that must be earned;
 - creating recurring reminders without explicit user consent.
 
+## Version 1.1.0
+
+Adds an optional "Starting now / Later / Skip today" protocol for reminders that are read and forgotten. It requires explicit consent and a real scheduling capability; one-shot follow-ups are not automatic escalation. Buttons are optional and text replies remain usable. The skill itself does not implement notifications or install a plugin.
+
+Also clarifies flexible batch-work rhythms and a factual continuation checkpoint: progress must come from user reports, not a daily quota or yesterday's reminder. Ordinary chats without scheduling use a manual phone/calendar reminder and a saved continuation note.
+
 ## License
 
 MIT

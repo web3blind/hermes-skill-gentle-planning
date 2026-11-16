@@ -1,7 +1,7 @@
 ---
 name: gentle-planning
 description: Use when a user wants calm, sustainable planning for a day, week, month, focused work session, or review without turning productivity into pressure. Helps create one-main-focus plans, stop rules, carryover decisions, and factual reviews that protect energy and meaning.
-version: 1.0.0
+version: 1.1.0
 author: web3blind
 license: MIT
 compatibility: Any
@@ -56,7 +56,7 @@ Do not use it for:
 
 ## Default Workflow
 
-1. Identify the planning horizon: day, week, month, session, or review.
+1. Identify the planning horizon: day, week, month, session, or review. Use the user's preferred rhythm; do not force a month → week → day sequence, daily quotas, or a complete outline before they can start. Batch work and uneven progress are valid. Preserve real deadlines and commitments; agree scope changes rather than silently lowering the promised result.
 2. Name the main pressure: overload, ambiguity, overrun, avoidance, energy, deadline, or competing priorities.
 3. Choose one main contour for the period.
 4. Add a small number of supporting blocks.
@@ -143,7 +143,11 @@ Only then recommend one adjustment.
 
 ## Optional Automation
 
-Use scheduled prompts only for reviews and gentle check-ins. Do not create obligations unless the user explicitly wants them.
+Use scheduled prompts only for user-requested reviews, gentle check-ins, or session-start reminders. Do not create obligations unless the user explicitly wants them. This skill is an instruction workflow, not a scheduler or button plugin.
+
+For the case "I read the reminder, got distracted, and forgot", use the consent, capability checks, three-way choice and bounded follow-up protocol in `references/automation-prompts.md`. Reading a notification is not a start confirmation. Buttons are optional; plain-text replies must work. Silence must not trigger escalation. When the user starts or skips, cancel a previously agreed follow-up and verify cancellation if one exists; do not cancel unrelated reminders.
+
+Each reminder should use the latest user-reported continuation point, not repeat an old plan. Follow `references/work-session.md` for a minimal checkpoint and honest progress states.
 
 Good recurring prompts:
 
